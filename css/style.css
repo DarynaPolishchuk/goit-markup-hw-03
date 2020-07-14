@@ -30,11 +30,30 @@ body {
 h1 {
   margin: 0;
 }
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid #666;
+}
 
 /*Разметка Хедера*/
-.header .container {
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header-utils {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+}
+.navigation-container {
+  display: flex;
+  align-items: center;
+}
+.navigation-list {
+  display: flex;
   align-items: center;
 }
 .logo {
@@ -47,30 +66,20 @@ h1 {
   color: #000000;
   margin-right: 85px;
 }
-.container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 1px solid #666;
-}
+
 .logo-web {
   color: var(--accent-color);
 }
-.navigation-container {
-  display: flex;
-  align-items: center;
-}
+
 .navigation-list-item:not(:last-child) {
   margin-right: 50px;
 }
-.navigation-list {
+.header .container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.address {
-  display: flex;
-}
+
 .navigation {
   font-style: normal;
   font-weight: 500;
@@ -95,6 +104,9 @@ h1 {
 .address > a:hover,
 .address > a:focus {
   color: var(--accent-color);
+}
+.address > a:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*Hero section*/
