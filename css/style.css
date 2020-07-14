@@ -5,7 +5,16 @@
   --secondary-color: #212121;
   --subtext-color: #757575;
 }
-
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
 ul {
   list-style: none;
 }
@@ -18,8 +27,16 @@ body {
 .link {
   text-decoration: none;
 }
+h1 {
+  margin: 0;
+}
 
 /*Разметка Хедера*/
+.header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .logo {
   font-family: var(--secondary-font);
   font-style: normal;
@@ -28,10 +45,31 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #000000;
+  margin-right: 85px;
 }
-
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid #666;
+}
 .logo-web {
   color: var(--accent-color);
+}
+.navigation-container {
+  display: flex;
+  align-items: center;
+}
+.navigation-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+.navigation-list {
+  display: flex;
+}
+.address {
+  display: flex;
 }
 .navigation {
   font-style: normal;
@@ -44,6 +82,7 @@ body {
 .navigation:focus {
   color: var(--accent-color);
 }
+
 .address > a {
   font-family: var(--main-font);
   font-style: normal;
@@ -57,13 +96,16 @@ body {
 .address > a:focus {
   color: var(--accent-color);
 }
+
 /*Hero section*/
+.hero {
+  text-align: center;
+}
 .hero-title {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -78,6 +120,7 @@ body {
 .filter-active:focus {
   background-color: var(--accent-color);
 }
+
 /*Секция наши приемущества*/
 .advantages-caption {
   line-height: 1.14;
