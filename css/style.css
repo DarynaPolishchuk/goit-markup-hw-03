@@ -38,15 +38,12 @@ h1 {
   margin-right: auto;
   outline: 1px solid #666;
 }
-
+.img {
+  display: block;
+}
 /*Разметка Хедера*/
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-.header-utils {
   display: flex;
-  align-items: center;
 }
 .navigation-container {
   display: flex;
@@ -70,7 +67,11 @@ h1 {
 .logo-web {
   color: var(--accent-color);
 }
-
+.navigation-list-item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .navigation-list-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -114,7 +115,9 @@ h1 {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background: url(/image/gallery/hero.jpg);
 }
+
 .hero-title {
   font-style: normal;
   font-weight: 900;
@@ -123,8 +126,7 @@ h1 {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: var(--subtext-color);
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 .button {
   background-color: var(--accent-color);
@@ -140,39 +142,98 @@ h1 {
 }
 
 /*Секция наши приемущества*/
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .advantages-caption {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .advantages-text {
+  font-family: Roboto;
   font-weight: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--subtext-color);
 }
+.advantage-list {
+  display: flex;
+  justify-content: space-between;
+}
+.advantage-list-items:not(:last-child) {
+  margin-right: 30px;
+}
+.icon {
+  margin-bottom: 30px;
+}
+
 /*Секция Чем мы занимаемся*/
+.what-we-do {
+  padding-bottom: 94px;
+}
 .title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 50px;
 }
 .what-we-do-title {
+  display: flex;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: var(--subtext-color);
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+}
+.what-we-do-list {
+  display: flex;
+  justify-content: space-between;
+}
+.what-we-do-list > li {
+  position: relative;
+}
+.what-we-do-list > li:not(:last-child) {
+  margin-right: 30px;
 }
 /* Секция Наша команда*/
+.team {
+  margin-left: auto;
+  margin-right: auto;
+  background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+.team-list > li {
+  width: 270px;
+  height: 422px;
+  background: #ffff;
+}
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 30px;
 }
 .team-career {
   font-weight: normal;
@@ -180,6 +241,16 @@ h1 {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--subtext-color);
+  text-align: center;
+  margin-top: 10px;
+}
+.team-social-links {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+}
+.team-title {
+  /* padding-top: 94px; */
 }
 /*Секция Постоянные клиенты*/
 
