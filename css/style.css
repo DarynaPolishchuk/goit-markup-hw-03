@@ -249,12 +249,38 @@ h1 {
   display: flex;
   justify-content: center;
 }
-.team-title {
-  /* padding-top: 94px; */
-}
-/*Секция Постоянные клиенты*/
 
+/*Секция Постоянные клиенты*/
+.customers {
+  margin-bottom: 94px;
+  margin-top: 94px;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+}
+.customers-list > li {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
 /*Footer*/
+.footer {
+  background-color: #2f303a;
+}
+.footer-container {
+  display: flex;
+}
+.footer-block {
+  margin-top: 60px;
+  margin-right: 69px;
+}
 .logo-studio {
   color: #ffffff;
 }
@@ -275,13 +301,14 @@ h1 {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--subtext-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 .call-to-action {
   font-weight: bold;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  color: #ffffff;
 }
 .type-of-services-title {
   font-weight: bold;
@@ -307,6 +334,3 @@ h1 {
   color: #ffffff;
 }
 /*Подложка под белые елементы*/
-.fon {
-  background-color: var(--subtext-color);
-}
