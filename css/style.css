@@ -118,8 +118,8 @@ h1 {
   padding-bottom: 200px;
   background-color: var(--subtext-color);
   /* background-image: url(./image/gallery/hero.jpg); */
-  background-image: url(/image/gallery/hero.jpg);
-  background-image: url("/image/gallery/hero.jpg");
+  /* background-image: url(/image/gallery/hero.jpg); */
+  background-image: url("../image/gallery/hero.jpg");
 }
 
 .hero-title {
