@@ -135,11 +135,6 @@ h1 {
   width: 200px;
   height: 50px;
 }
-/*Ховер для страници портфолио*/
-.filter-active:hover,
-.filter-active:focus {
-  background-color: var(--accent-color);
-}
 
 /*Секция наши приемущества*/
 .advantages {
@@ -276,9 +271,15 @@ h1 {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
+}
+.footer-block-logo {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-right: 69px;
 }
 .footer-block {
-  margin-top: 60px;
+  /* margin-top: 72px; */
   margin-right: 69px;
 }
 .logo-studio {
@@ -309,7 +310,55 @@ h1 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 20px;
 }
+
+/* Портфолио */
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 93px;
+  margin-bottom: 50px;
+}
+.filter > li:not(:last-child) {
+  margin-right: 8px;
+}
+/*Ховер для фильтра страници портфолио*/
+.filter-active:hover,
+.filter-active:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+.filter-active {
+  width: 128px;
+  height: 38px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+/* галерея страници портфолио */
+.galery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.galery > li:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+.galery > li {
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
+/* 3n
+    1)3*0=0
+    2)3*1=3
+    3)3*2=6
+    4)3*3=9 */
+
 .type-of-services-title {
   font-weight: bold;
   font-size: 18px;
@@ -333,4 +382,11 @@ h1 {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-/*Подложка под белые елементы*/
+.small-container {
+  width: 322px;
+  height: 36px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
