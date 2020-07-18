@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --secondary-color: #212121;
   --subtext-color: #757575;
+  --white-color: #ffffff;
 }
 html {
   box-sizing: border-box;
@@ -19,7 +20,7 @@ ul {
   list-style: none;
 }
 body {
-  background-color: #ffffff;
+  background-color: var(--white-color);
   font-family: var(--main-font);
   font-size: 14px;
   color: var(--secondary-color);
@@ -125,12 +126,12 @@ h1 {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
   margin-bottom: 30px;
 }
 .button {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--white-color);
   position: center;
   width: 200px;
   height: 50px;
@@ -148,7 +149,7 @@ h1 {
   margin-bottom: 10px;
 }
 .advantages-text {
-  font-family: Roboto;
+  font-family: var(--main-font);
   font-weight: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -184,7 +185,7 @@ h1 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
   width: 370px;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);
@@ -220,7 +221,7 @@ h1 {
 .team-list > li {
   width: 270px;
   height: 422px;
-  background: #ffff;
+  background: var(--white-color);
 }
 .team-name {
   font-weight: 500;
@@ -283,7 +284,7 @@ h1 {
   margin-right: 69px;
 }
 .logo-studio {
-  color: #ffffff;
+  color: var(--white-color);
 }
 .footer-address {
   font-style: normal;
@@ -292,7 +293,7 @@ h1 {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .footer-tel,
 .footer-mail {
@@ -309,7 +310,7 @@ h1 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
   margin-bottom: 20px;
 }
 
@@ -330,12 +331,12 @@ h1 {
 .filter-active:hover,
 .filter-active:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--white-color);
 }
 .filter-active {
   width: 128px;
   height: 38px;
-  font-family: Roboto;
+  font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -384,7 +385,7 @@ h1 {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .small-container {
   padding-left: 24px;
