@@ -116,7 +116,7 @@ h1 {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background: url(/image/gallery/hero.jpg);
+  background: url(./image/gallery/hero.jpg);
 }
 
 .hero-title {
