@@ -166,7 +166,20 @@ h1 {
 .advantage-list-items:not(:last-child) {
   margin-right: 30px;
 }
+/* .advantage-list-items{
+  justify-content: center;
+  align-items: center;
+} */
 .icon {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 102px;
+  margin-right: 102px;
+}
+.img-advanture {
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
   margin-bottom: 30px;
 }
 
@@ -274,7 +287,7 @@ h1 {
 .footer {
   background-color: #2f303a;
 }
-.footer-container {
+.footer .container {
   display: flex;
   align-items: baseline;
 }
@@ -345,6 +358,7 @@ h1 {
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
+  border: 0;
 }
 /* галерея страници портфолио */
 .galery {
